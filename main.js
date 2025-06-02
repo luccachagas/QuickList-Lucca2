@@ -50,13 +50,13 @@ function showItemsList() {
                 </button>
             </div>
         `
-    })
 
     localStorage.setItem('items', JSON.stringify(items))
+    })
 }
 
 function removeItem(itemName) {
-    const itemIndex = items.findIndex(item => item.name === itemName)
+    const itemIndex = items.findIndex((item) => item.name === itemName)
     const divWarning = document.querySelector('.warning')
 
     divWarning.classList.remove('hide-warning')
